@@ -1,0 +1,57 @@
+/*
+Kenneth Burroughs
+February 16th, 2026
+*/
+#include <iostream>
+using namespace std;
+/*
+Today we are going to attempt to create a class that stores Polynomials.
+Here is one way to do it:
+*/
+
+int main ()
+{
+//
+	const int size {5};
+	int polynomial[size];
+//
+	cout << "Enter a polynomial from largest exponent to smallest." << endl;
+	for (int i {size}; i > 0; --i) {
+		cin >> polynomial[i];
+		cout << endl;
+	}
+//
+	return 0;
+}
+
+/*
+Stack notes (unrelated)
+
+Data:
+	 - Array
+	 - Top
+
+Operations:
+    - Init (constructor)
+    - Push (item)
+    - Pop (variable)
+    - Isempty
+    - Isfull
+
+Queue (FIFO)
+
+Data:
+	 - Array
+     - Back Index
+     - Front Index
+
+Operations:
+    - Init
+    - Enqueue: Insert the "back" of the queue
+    - Dequeue: Remove from the "front" of the queue
+    - Isempty
+    - Isfull
+
+** .h files need to be wrapped in these commands:
+#ifndef _FILE_H
+#define _FILE_H
